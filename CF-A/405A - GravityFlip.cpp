@@ -8,6 +8,7 @@ int main(){
 
 	for(int i = 0; i < ncol; i++){
 		cin >> cubes[i];
+		
 		if(cubes[i] > max) max = cubes[i];
 	}
 
