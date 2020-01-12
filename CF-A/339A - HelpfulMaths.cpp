@@ -16,7 +16,5 @@ int main(){
 		else cout << v[i] << "+";
 	}
 
-
-
 	return 0;
 }

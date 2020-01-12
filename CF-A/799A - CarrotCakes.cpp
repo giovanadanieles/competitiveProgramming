@@ -16,7 +16,6 @@ int main(){
 
 	//Time using two ovens
 	while(tn < n){
-
 		if(time == d){
 			tn += k;
 			sectime = time + t;
