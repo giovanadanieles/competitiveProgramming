@@ -17,7 +17,6 @@ using namespace std;
 }*/
 
 //Version with Greatest Common Denominator (GCD):
-
 int gcd(int a, int b){
 	return b == 0 ? a : gcd(b, a % b); 
 }
