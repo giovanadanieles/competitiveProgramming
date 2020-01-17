@@ -9,7 +9,8 @@ int main(){
 			cin >> m;
 
 			if(m == 1){
-				auxi = i; auxj = j;
+				auxi = i; 
+				auxj = j;
 			} 
 		}
 	}
