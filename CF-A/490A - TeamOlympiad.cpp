@@ -1,30 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool compare(const pair<int, int> &a, const pair<int, int> &b){
-	return a.second < b.second;
-}
-
-int main(){
-	int n, aux;
-	vector < pair <int, int> > st;
+int main(int argc, char* const argv[]){
+	int n, aux, ans;
+	stack<int> prog, math, pe;
 
 	cin >> n;
 
-	for(int i = 0; i < n; i++){
+	for(int i = 1; i <= n; i++){
 		cin >> aux;
 
-
-
-		st.push_back(make_pair(i, aux));
+		if(aux == 1) prog.push(i);
+		else if(aux == 2) math.push(i);
+		else pe.push(i); 
 	}
 
-	sort(st.begin(), st.end(), compare);
+	ans = min(prog.size(), math.size());
+	ans = min(ans, (int)pe.size());
 
-	while(i < n){
-		
+	cout << ans << endl;
+
+	for(int i = 0; i < ans; i++){
+		cout << prog.top() << " " << math.top() << " " << pe.top() << endl;
+
+		prog.pop(), math.pop(), pe.pop();
 	}
-
 
 	return 0;
 }
